@@ -15,6 +15,48 @@ class CookBookViewController: BaseViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        //导航
+        createMyNav()
+        
+        //下载推荐的数据
+        downloadRecommendData()
+    }
+    
+    //下载推荐的数据
+    func downloadRecommendData(){
+        
+        //methodName=SceneHome&token=&user_id=&version=4.5
+        let dict = ["methodName":"SceneHome","token":"","user_id":"","version":"4.5"]
+        let downloader = KTCDownloader()
+        downloader.delegate = self
+        downloader.postWithUrlString(kHostUrl, params: dict)
+        
+    }
+    
+    //创建导航
+    func createMyNav(){
+        
+        //扫一扫
+        addNavBtn("saoyisao", target: self, action: #selector(scanAction), isLeft: true)
+        
+        //搜索
+        addNavBtn("search", target: self, action: #selector(searchAction), isLeft: false)
+        
+    }
+    
+    //扫一扫
+    func scanAction(){
+        
+        
+        
+    }
+    
+    //搜索
+    func searchAction(){
+        
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -34,3 +76,49 @@ class CookBookViewController: BaseViewController {
     */
 
 }
+
+
+//MARK: KTCDownloader代理
+extension CookBookViewController:KTCDownloaderDelegate {
+    
+    func downloader(downloader: KTCDownloader, didFailWithError error: NSError) {
+        print(error)
+    }
+    
+    func downloader(downloader: KTCDownloader, didFinishWithData data: NSData?) {
+        
+        let str = NSString(data: data!, encoding: NSUTF8StringEncoding)
+        print(str!)
+        
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
