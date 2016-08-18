@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 //导入第三方库
 import SnapKit

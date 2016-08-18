@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B30F893D1D63FBAE0033A9EE /* CBRecommendView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B30F893C1D63FBAE0033A9EE /* CBRecommendView.swift */; };
+		B30F89401D63FF460033A9EE /* CBRecommendADCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B30F893E1D63FF460033A9EE /* CBRecommendADCell.swift */; };
+		B30F89411D63FF460033A9EE /* CBRecommendADCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B30F893F1D63FF460033A9EE /* CBRecommendADCell.xib */; };
+		B30F89431D6407FE0033A9EE /* UIImageView+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = B30F89421D6407FE0033A9EE /* UIImageView+Util.swift */; };
+		B30F89461D640A0C0033A9EE /* sdefaultImage.png in Resources */ = {isa = PBXBuildFile; fileRef = B30F89451D640A0C0033A9EE /* sdefaultImage.png */; };
+		B30F89511D64175A0033A9EE /* CBRecommendLikeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B30F894F1D64175A0033A9EE /* CBRecommendLikeCell.swift */; };
+		B30F89521D64175A0033A9EE /* CBRecommendLikeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B30F89501D64175A0033A9EE /* CBRecommendLikeCell.xib */; };
 		B3C595181D6151BA00CD1758 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C595171D6151BA00CD1758 /* AppDelegate.swift */; };
 		B3C5951A1D6151BA00CD1758 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C595191D6151BA00CD1758 /* ViewController.swift */; };
 		B3C5951D1D6151BA00CD1758 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3C5951B1D6151BA00CD1758 /* Main.storyboard */; };
@@ -96,6 +103,13 @@
 		3EFC2817FB9A079F19D14ED0 /* Pods-TestKitchen.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestKitchen.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestKitchen/Pods-TestKitchen.release.xcconfig"; sourceTree = "<group>"; };
 		6A702DEA54551187205F2B02 /* Pods-TestKitchen.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestKitchen.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TestKitchen/Pods-TestKitchen.debug.xcconfig"; sourceTree = "<group>"; };
 		7FC2AFC0449A9D0F2D1CC629 /* Pods_TestKitchen.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestKitchen.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B30F893C1D63FBAE0033A9EE /* CBRecommendView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CBRecommendView.swift; sourceTree = "<group>"; };
+		B30F893E1D63FF460033A9EE /* CBRecommendADCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CBRecommendADCell.swift; sourceTree = "<group>"; };
+		B30F893F1D63FF460033A9EE /* CBRecommendADCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CBRecommendADCell.xib; sourceTree = "<group>"; };
+		B30F89421D6407FE0033A9EE /* UIImageView+Util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+Util.swift"; sourceTree = "<group>"; };
+		B30F89451D640A0C0033A9EE /* sdefaultImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sdefaultImage.png; sourceTree = "<group>"; };
+		B30F894F1D64175A0033A9EE /* CBRecommendLikeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CBRecommendLikeCell.swift; sourceTree = "<group>"; };
+		B30F89501D64175A0033A9EE /* CBRecommendLikeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CBRecommendLikeCell.xib; sourceTree = "<group>"; };
 		B3C595141D6151BA00CD1758 /* TestKitchen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestKitchen.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3C595171D6151BA00CD1758 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B3C595191D6151BA00CD1758 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -204,6 +218,14 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		B30F89441D640A0C0033A9EE /* common */ = {
+			isa = PBXGroup;
+			children = (
+				B30F89451D640A0C0033A9EE /* sdefaultImage.png */,
+			);
+			path = common;
+			sourceTree = "<group>";
+		};
 		B3C5950B1D6151BA00CD1758 = {
 			isa = PBXGroup;
 			children = (
@@ -285,6 +307,7 @@
 				B3FE78131D617523001AD946 /* UIButton+Util.swift */,
 				B3FE7E5D1D62A858001AD946 /* Const.swift */,
 				B3FE7E821D62BD70001AD946 /* KTCDownloader.swift */,
+				B30F89421D6407FE0033A9EE /* UIImageView+Util.swift */,
 			);
 			path = common;
 			sourceTree = "<group>";
@@ -500,6 +523,7 @@
 		B3C595611D6153E700CD1758 /* resources */ = {
 			isa = PBXGroup;
 			children = (
+				B30F89441D640A0C0033A9EE /* common */,
 				B3FE7E771D62B9C3001AD946 /* launchImages */,
 				B3FE7E661D62B98E001AD946 /* nav */,
 				B3FE7E2C1D62A15D001AD946 /* tabbar */,
@@ -607,6 +631,11 @@
 		B3FE7E871D62C619001AD946 /* view */ = {
 			isa = PBXGroup;
 			children = (
+				B30F893C1D63FBAE0033A9EE /* CBRecommendView.swift */,
+				B30F893E1D63FF460033A9EE /* CBRecommendADCell.swift */,
+				B30F893F1D63FF460033A9EE /* CBRecommendADCell.xib */,
+				B30F894F1D64175A0033A9EE /* CBRecommendLikeCell.swift */,
+				B30F89501D64175A0033A9EE /* CBRecommendLikeCell.xib */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -737,6 +766,7 @@
 				B3FE7E491D62A15D001AD946 /* home_normal@2x.png in Resources */,
 				B3FE7E801D62B9C3001AD946 /* LaunchImage-800-Landscape-736h@3x.png in Resources */,
 				B3FE7E471D62A15D001AD946 /* community_select@2x.png in Resources */,
+				B30F89521D64175A0033A9EE /* CBRecommendLikeCell.xib in Resources */,
 				B3FE7E551D62A15D001AD946 /* shike_normal@2x.png in Resources */,
 				B3FE7E531D62A15D001AD946 /* report_select@2x.png in Resources */,
 				B3FE7E7F1D62B9C3001AD946 /* LaunchImage-800-667h@2x.png in Resources */,
@@ -747,6 +777,8 @@
 				B3C595221D6151BA00CD1758 /* LaunchScreen.storyboard in Resources */,
 				B3FE7E5B1D62A15D001AD946 /* shop_select@2x.png in Resources */,
 				B3C5958D1D61642100CD1758 /* Ctrl.json in Resources */,
+				B30F89411D63FF460033A9EE /* CBRecommendADCell.xib in Resources */,
+				B30F89461D640A0C0033A9EE /* sdefaultImage.png in Resources */,
 				B3FE7E481D62A15D001AD946 /* community_select@3x.png in Resources */,
 				B3FE7E731D62B98E001AD946 /* saoyisao@2x.png in Resources */,
 				B3FE7E741D62B98E001AD946 /* saoyisao@3x.png in Resources */,
@@ -853,15 +885,19 @@
 				B3C5957F1D615AB700CD1758 /* BaseViewController.swift in Sources */,
 				B3C595831D615B2700CD1758 /* CommunityViewController.swift in Sources */,
 				B3C595811D615B0300CD1758 /* CookBookViewController.swift in Sources */,
+				B30F89511D64175A0033A9EE /* CBRecommendLikeCell.swift in Sources */,
 				B3C595851D615B6F00CD1758 /* MallViewController.swift in Sources */,
 				B3FE78141D617523001AD946 /* UIButton+Util.swift in Sources */,
 				B3C595891D615B9E00CD1758 /* FoodClassViewController.swift in Sources */,
 				B3FE78101D61730F001AD946 /* UIView+Util.swift in Sources */,
 				B3C5958B1D615BBC00CD1758 /* ProfileViewController.swift in Sources */,
 				B3C595181D6151BA00CD1758 /* AppDelegate.swift in Sources */,
+				B30F893D1D63FBAE0033A9EE /* CBRecommendView.swift in Sources */,
 				B3C5957D1D615A7200CD1758 /* MainTabBarController.swift in Sources */,
+				B30F89431D6407FE0033A9EE /* UIImageView+Util.swift in Sources */,
 				B3FE7E831D62BD70001AD946 /* KTCDownloader.swift in Sources */,
 				B3FE78121D6173C7001AD946 /* UILabel+Util.swift in Sources */,
+				B30F89401D63FF460033A9EE /* CBRecommendADCell.swift in Sources */,
 				B3FE7E5E1D62A858001AD946 /* Const.swift in Sources */,
 				B3FE7E891D62C66F001AD946 /* CBRecommendModel.swift in Sources */,
 			);
