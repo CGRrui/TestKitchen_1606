@@ -62,27 +62,19 @@ class CBRecommendView: UIView {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 //MARK: UITabelView代理
 extension CBRecommendView: UITableViewDelegate,UITableViewDataSource {
     
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         //广告数据显示一个分组
-        return 1
+        var sectionNum = 1
+        
+        if model?.data?.widgetList?.count > 0 {
+            
+                sectionNum += (model?.data?.widgetList?.count)!
+            
+        }
+        return sectionNum
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -96,6 +88,19 @@ extension CBRecommendView: UITableViewDelegate,UITableViewDataSource {
                 
             }
             
+        }else{
+            
+            //其他的情况
+            let listModel = model?.data?.widgetList![section-1]
+            if listModel?.widget_type?.integerValue == WidgetType.GuessYourLike.rawValue{
+                //猜你喜欢的显示
+                rowNum = 1  //显示1行
+                
+                
+            }else if listModel?.widget_type?.integerValue == WidgetType.RedPackage.rawValue {
+                //红包入口
+                rowNum = 1
+            }
         }
         return rowNum
     }
@@ -112,9 +117,20 @@ extension CBRecommendView: UITableViewDelegate,UITableViewDataSource {
                 height = 160
             }
             
+        }else{
+            
+            //其他情况
+            let listModel = model?.data?.widgetList![indexPath.section-1]
+            if listModel?.widget_type?.integerValue == WidgetType.GuessYourLike.rawValue {
+                //猜你喜欢
+                height = 80
+            }else if listModel?.widget_type?.integerValue == WidgetType.RedPackage.rawValue {
+                //红包入口
+                height = 100
+            }
+            
         }
         return height
-        
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
@@ -127,13 +143,59 @@ extension CBRecommendView: UITableViewDelegate,UITableViewDataSource {
                 cell = CBRecommendADCell.createAdCellFor(tableView, atIndexPath: indexPath, withModel: model!)
                 
             }
+        }else{
+            
+            //其他情况
+            let listModel = model?.data?.widgetList![indexPath.section-1]
+            if listModel?.widget_type?.integerValue == WidgetType.GuessYourLike.rawValue {
+                //猜你喜欢
+                cell = CBRecommendLikeCell.createLikeCellFor(tableView, atIndexPath: indexPath, withListModel: listModel!)
+            }else if listModel?.widget_type?.integerValue == WidgetType.RedPackage.rawValue {
+                //红包入口
+                cell = CBRedPacketCell.createRedPackageCellFor(tableView, atIndexPath: indexPath, withListModel: listModel!)
+            }
         }
-        return cell
+     return cell
+}
+    
+    func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        
+        var headView: UIView? = nil
+        if section > 0 {
+            
+            //其他的情况
+            let listModel = model?.data?.widgetList![section-1]
+            if listModel?.widget_type?.integerValue == WidgetType.GuessYourLike.rawValue{
+            
+                //猜你喜欢的显示
+                headView = CBSearchHeaderView(frame: CGRectMake(0,0,kScreenWidth,44))
+            
+        }
+        
+    }
+        return headView
     }
     
+    func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        
+        //其他的情况
+        var height:CGFloat = 0
+        if section > 0 {
+            
+            //其他情况
+            let listModel = model?.data?.widgetList![section-1]
+            if listModel?.widget_type?.integerValue == WidgetType.GuessYourLike.rawValue{
+                
+                //猜你喜欢的显示
+                height = 44
+                
+            }
+            
+        }
+        
+        return height
 }
-
-
+}
 
 
 
