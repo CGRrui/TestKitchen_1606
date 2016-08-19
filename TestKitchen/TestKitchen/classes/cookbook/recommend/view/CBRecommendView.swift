@@ -98,9 +98,12 @@ extension CBRecommendView: UITableViewDelegate,UITableViewDataSource {
                 
                 
             }else if listModel?.widget_type?.integerValue == WidgetType.RedPackage.rawValue {
-                //红包入口
+                //红包入口(滚动视图)
                 rowNum = 1
-            }
+            }else if listModel?.widget_type?.integerValue == WidgetType.NewProduct.rawValue{
+                    //今日新品
+                    rowNum = 1  //显示1行
+                }
         }
         return rowNum
     }
@@ -127,6 +130,9 @@ extension CBRecommendView: UITableViewDelegate,UITableViewDataSource {
             }else if listModel?.widget_type?.integerValue == WidgetType.RedPackage.rawValue {
                 //红包入口
                 height = 100
+            }else if listModel?.widget_type?.integerValue == WidgetType.NewProduct.rawValue {
+                //今日新品
+                height = 300
             }
             
         }
@@ -153,6 +159,9 @@ extension CBRecommendView: UITableViewDelegate,UITableViewDataSource {
             }else if listModel?.widget_type?.integerValue == WidgetType.RedPackage.rawValue {
                 //红包入口
                 cell = CBRedPacketCell.createRedPackageCellFor(tableView, atIndexPath: indexPath, withListModel: listModel!)
+            }else if listModel?.widget_type?.integerValue == WidgetType.NewProduct.rawValue {
+                //今日新品
+                cell = CBRecommendNewCell.createNewCellFor(tableView, atIndexPath: indexPath, withListModel: listModel!)
             }
         }
      return cell
@@ -170,7 +179,14 @@ extension CBRecommendView: UITableViewDelegate,UITableViewDataSource {
                 //猜你喜欢的显示
                 headView = CBSearchHeaderView(frame: CGRectMake(0,0,kScreenWidth,44))
             
-        }
+            }else if listModel?.widget_type?.integerValue == WidgetType.NewProduct.rawValue{
+                
+                //今日新品的显示(json返回的数据不同,所以显示的今日新品会变化)
+                let tmpView = CBHeaderView(frame: CGRectMake(0,0,kScreenWidth,44))
+                tmpView.configTitle((listModel?.title)!)
+                headView = tmpView
+                
+            }
         
     }
         return headView
@@ -184,9 +200,10 @@ extension CBRecommendView: UITableViewDelegate,UITableViewDataSource {
             
             //其他情况
             let listModel = model?.data?.widgetList![section-1]
-            if listModel?.widget_type?.integerValue == WidgetType.GuessYourLike.rawValue{
+            if listModel?.widget_type?.integerValue == WidgetType.GuessYourLike.rawValue || listModel?.widget_type?.integerValue == WidgetType.NewProduct.rawValue{
                 
-                //猜你喜欢的显示
+                //猜你喜欢的显示  --  GuessYourLike
+                //今日新品的显示  --  NewProduct
                 height = 44
                 
             }

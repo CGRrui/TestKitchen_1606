@@ -19,6 +19,14 @@
 		B32502611D6561D10024521F /* search1.png in Resources */ = {isa = PBXBuildFile; fileRef = B32502601D6561D10024521F /* search1.png */; };
 		B32502641D6563150024521F /* CBRedPacketCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32502621D6563150024521F /* CBRedPacketCell.swift */; };
 		B32502651D6563150024521F /* CBRedPacketCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B32502631D6563150024521F /* CBRedPacketCell.xib */; };
+		B344BF781D66942D001CF89F /* CBRecommendNewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B344BF761D66942D001CF89F /* CBRecommendNewCell.swift */; };
+		B344BF791D66942D001CF89F /* CBRecommendNewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B344BF771D66942D001CF89F /* CBRecommendNewCell.xib */; };
+		B344BF7C1D669933001CF89F /* play-A@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B344BF7A1D669933001CF89F /* play-A@2x.png */; };
+		B344BF7D1D669933001CF89F /* play-A@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B344BF7B1D669933001CF89F /* play-A@3x.png */; };
+		B344BF7F1D66AB08001CF89F /* CBHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B344BF7E1D66AB08001CF89F /* CBHeaderView.swift */; };
+		B344BF811D66ADD2001CF89F /* more_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B344BF801D66ADD2001CF89F /* more_icon.png */; };
+		B344BF841D66B159001CF89F /* CBSpecialCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B344BF821D66B159001CF89F /* CBSpecialCell.swift */; };
+		B344BF851D66B159001CF89F /* CBSpecialCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B344BF831D66B159001CF89F /* CBSpecialCell.xib */; };
 		B3C595181D6151BA00CD1758 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C595171D6151BA00CD1758 /* AppDelegate.swift */; };
 		B3C5951A1D6151BA00CD1758 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C595191D6151BA00CD1758 /* ViewController.swift */; };
 		B3C5951D1D6151BA00CD1758 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3C5951B1D6151BA00CD1758 /* Main.storyboard */; };
@@ -120,6 +128,14 @@
 		B32502601D6561D10024521F /* search1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = search1.png; sourceTree = "<group>"; };
 		B32502621D6563150024521F /* CBRedPacketCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CBRedPacketCell.swift; sourceTree = "<group>"; };
 		B32502631D6563150024521F /* CBRedPacketCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CBRedPacketCell.xib; sourceTree = "<group>"; };
+		B344BF761D66942D001CF89F /* CBRecommendNewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CBRecommendNewCell.swift; sourceTree = "<group>"; };
+		B344BF771D66942D001CF89F /* CBRecommendNewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CBRecommendNewCell.xib; sourceTree = "<group>"; };
+		B344BF7A1D669933001CF89F /* play-A@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "play-A@2x.png"; sourceTree = "<group>"; };
+		B344BF7B1D669933001CF89F /* play-A@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "play-A@3x.png"; sourceTree = "<group>"; };
+		B344BF7E1D66AB08001CF89F /* CBHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CBHeaderView.swift; sourceTree = "<group>"; };
+		B344BF801D66ADD2001CF89F /* more_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = more_icon.png; sourceTree = "<group>"; };
+		B344BF821D66B159001CF89F /* CBSpecialCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CBSpecialCell.swift; sourceTree = "<group>"; };
+		B344BF831D66B159001CF89F /* CBSpecialCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CBSpecialCell.xib; sourceTree = "<group>"; };
 		B3C595141D6151BA00CD1758 /* TestKitchen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestKitchen.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3C595171D6151BA00CD1758 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B3C595191D6151BA00CD1758 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -247,6 +263,9 @@
 		B325025F1D6561D10024521F /* homePage */ = {
 			isa = PBXGroup;
 			children = (
+				B344BF801D66ADD2001CF89F /* more_icon.png */,
+				B344BF7A1D669933001CF89F /* play-A@2x.png */,
+				B344BF7B1D669933001CF89F /* play-A@3x.png */,
 				B32502601D6561D10024521F /* search1.png */,
 			);
 			path = homePage;
@@ -668,6 +687,11 @@
 				B325025C1D655AE50024521F /* CBSearchHeaderView.swift */,
 				B32502621D6563150024521F /* CBRedPacketCell.swift */,
 				B32502631D6563150024521F /* CBRedPacketCell.xib */,
+				B344BF761D66942D001CF89F /* CBRecommendNewCell.swift */,
+				B344BF771D66942D001CF89F /* CBRecommendNewCell.xib */,
+				B344BF7E1D66AB08001CF89F /* CBHeaderView.swift */,
+				B344BF821D66B159001CF89F /* CBSpecialCell.swift */,
+				B344BF831D66B159001CF89F /* CBSpecialCell.xib */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -792,6 +816,8 @@
 			files = (
 				B3C595711D61554800CD1758 /* AppIcon40x40@2x.png in Resources */,
 				B3FE7E4D1D62A15D001AD946 /* mine_normal@2x.png in Resources */,
+				B344BF791D66942D001CF89F /* CBRecommendNewCell.xib in Resources */,
+				B344BF811D66ADD2001CF89F /* more_icon.png in Resources */,
 				B3FE7E7D1D62B9C3001AD946 /* LaunchImage-700-568h@2x.png in Resources */,
 				B3C5956F1D61554800CD1758 /* AppIcon29x29@2x.png in Resources */,
 				B3FE7E461D62A15D001AD946 /* community_normal@3x.png in Resources */,
@@ -806,6 +832,7 @@
 				B3FE7E5C1D62A15D001AD946 /* shop_select@3x.png in Resources */,
 				B3C595721D61554800CD1758 /* AppIcon40x40@3x.png in Resources */,
 				B3FE7E711D62B98E001AD946 /* navBar.png in Resources */,
+				B344BF851D66B159001CF89F /* CBSpecialCell.xib in Resources */,
 				B3C595221D6151BA00CD1758 /* LaunchScreen.storyboard in Resources */,
 				B3FE7E5B1D62A15D001AD946 /* shop_select@2x.png in Resources */,
 				B3C5958D1D61642100CD1758 /* Ctrl.json in Resources */,
@@ -828,6 +855,7 @@
 				B3FE7E721D62B98E001AD946 /* navBtn_bag.png in Resources */,
 				B3FE7E581D62A15D001AD946 /* shike_select@3x.png in Resources */,
 				B3FE7E571D62A15D001AD946 /* shike_select@2x.png in Resources */,
+				B344BF7D1D669933001CF89F /* play-A@3x.png in Resources */,
 				B3FE7E501D62A15D001AD946 /* mine_select@3x.png in Resources */,
 				B3FE7E761D62B98E001AD946 /* search@3x.png in Resources */,
 				B3FE7E751D62B98E001AD946 /* search@2x.png in Resources */,
@@ -841,6 +869,7 @@
 				B3C595731D61554800CD1758 /* AppIcon60x60@2x.png in Resources */,
 				B3C595741D61554800CD1758 /* AppIcon60x60@3x.png in Resources */,
 				B3FE7E7E1D62B9C3001AD946 /* LaunchImage-700@2x.png in Resources */,
+				B344BF7C1D669933001CF89F /* play-A@2x.png in Resources */,
 				B3FE7E511D62A15D001AD946 /* report_normal@2x.png in Resources */,
 				B3C595701D61554800CD1758 /* AppIcon29x29@3x.png in Resources */,
 			);
@@ -916,11 +945,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				B3C5951A1D6151BA00CD1758 /* ViewController.swift in Sources */,
+				B344BF781D66942D001CF89F /* CBRecommendNewCell.swift in Sources */,
 				B3C5957F1D615AB700CD1758 /* BaseViewController.swift in Sources */,
 				B325025D1D655AE50024521F /* CBSearchHeaderView.swift in Sources */,
 				B3C595831D615B2700CD1758 /* CommunityViewController.swift in Sources */,
 				B3C595811D615B0300CD1758 /* CookBookViewController.swift in Sources */,
 				B30F89511D64175A0033A9EE /* CBRecommendLikeCell.swift in Sources */,
+				B344BF841D66B159001CF89F /* CBSpecialCell.swift in Sources */,
 				B3C595851D615B6F00CD1758 /* MallViewController.swift in Sources */,
 				B3FE78141D617523001AD946 /* UIButton+Util.swift in Sources */,
 				B32502641D6563150024521F /* CBRedPacketCell.swift in Sources */,
@@ -936,6 +967,7 @@
 				B3FE78121D6173C7001AD946 /* UILabel+Util.swift in Sources */,
 				B30F89401D63FF460033A9EE /* CBRecommendADCell.swift in Sources */,
 				B3FE7E5E1D62A858001AD946 /* Const.swift in Sources */,
+				B344BF7F1D66AB08001CF89F /* CBHeaderView.swift in Sources */,
 				B3FE7E891D62C66F001AD946 /* CBRecommendModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

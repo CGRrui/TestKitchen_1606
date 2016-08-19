@@ -6,6 +6,7 @@
 //  Copyright © 2016年 Rui. All rights reserved.
 //
 
+//食材界面 -> 推荐 -> 搜索界面
 import UIKit
 
 class CBSearchHeaderView: UIView {
