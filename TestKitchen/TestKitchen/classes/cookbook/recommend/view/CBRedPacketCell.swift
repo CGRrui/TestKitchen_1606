@@ -6,7 +6,7 @@
 //  Copyright © 2016年 Rui. All rights reserved.
 //
 
-//食材界面 -> 推荐 -> 红包界面
+//食材界面 -> 推荐 -> 猜你喜欢下面的滚动视图
 import UIKit
 
 class CBRedPacketCell: UITableViewCell {
@@ -24,6 +24,11 @@ class CBRedPacketCell: UITableViewCell {
     
     //显示图片和文字
     func showData(){
+        
+        //删除之前的子视图(不然会有重影)
+        for sub in scrollView.subviews {
+            sub.removeFromSuperview()
+        }
         
         self.scrollView.showsVerticalScrollIndicator = false
         

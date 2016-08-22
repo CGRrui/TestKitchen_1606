@@ -28,6 +28,14 @@ class CBRecommendADCell: UITableViewCell {
     
     func showData(){
         
+        //删除之前的子视图(不然会有重影)
+        for sub in scrollView.subviews {
+            
+            sub.removeFromSuperview()
+            
+            
+        }
+        
         let cnt = bannerArray?.count
         if cnt > 0 {
             
